@@ -1,5 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: white;
-    margin: 0;
-    padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5f6fa;
+  color: #2d2d2d;
+  line-height: 1.7;
+}
+
+/* ── Navigation ── */
+nav {
+  background-color: #1a1a2e;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav .brand {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+nav a {
+  color: #b0b8d1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #4a5568;
+  color: #ffffff;
+}
+
+/* ── Hero / Page Header ── */
+.page-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  color: #ffffff;
+  padding: 60px 40px 50px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.page-header p {
+  font-size: 1rem;
+  color: #a0aec0;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* ── Main content area ── */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 24px 60px;
+}
+
+/* ── Cards ── */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 34px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  color: #1a1a2e;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: #2d3748;
+  margin: 18px 0 8px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+.card ul li {
+  margin-bottom: 6px;
+}
+
+/* ── Tag / Badge ── */
+.badge {
+  display: inline-block;
+  background-color: #ebf4ff;
+  color: #2b6cb0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+/* ── Stat strip ── */
+.stat-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 140px;
+  background: #f0f4ff;
+  border-radius: 8px;
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.stat-box .number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.stat-box .label {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-top: 4px;
+}
+
+/* ── Task blocks ── */
+.task-block {
+  border-left: 4px solid #4a90e2;
+  padding: 14px 18px;
+  background: #f7faff;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 16px;
+}
+
+.task-block h3 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+}
+
+.task-block p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+/* ── Finding highlight ── */
+.finding {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.finding-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ebf4ff;
+  color: #2b6cb0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.finding-text h3 {
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.finding-text p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin: 0;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #a0aec0;
+  padding: 24px;
+  border-top: 1px solid #e2e8f0;
 }
