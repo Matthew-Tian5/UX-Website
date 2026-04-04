@@ -5,99 +5,210 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f5f6fa;
-  color: #2d2d2d;
-  line-height: 1.7;
+  font-family: 'Courier New', monospace;
+  background-color: black;
+  color: white;
+  line-height: 1.2;
+  font-size: 14px;
 }
 
 /* ── Navigation ── */
 nav {
-  background-color: #1a1a2e;
-  padding: 14px 40px;
+  background-color: black;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
+  border-bottom: 1px solid white;
 }
 
 nav .brand {
-  color: #e0e0e0;
-  font-size: 1.1rem;
-  font-weight: 700;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
   margin-right: auto;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav a {
-  color: #b0b8d1;
+  color: white;
   text-decoration: none;
   font-size: 0.9rem;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background 0.2s, color 0.2s;
+  padding: 5px 10px;
+  border: 1px solid white;
+  transition: none;
 }
 
 nav a:hover,
 nav a.active {
-  background-color: #4a5568;
-  color: #ffffff;
+  background-color: white;
+  color: black;
 }
 
 /* ── Hero / Page Header ── */
 .page-header {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
-  color: #ffffff;
-  padding: 60px 40px 50px;
+  background: black;
+  color: white;
+  padding: 40px 20px 30px;
   text-align: center;
+  border-bottom: 1px solid white;
 }
 
 .page-header h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 12px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .page-header p {
   font-size: 1rem;
-  color: #a0aec0;
+  color: white;
   max-width: 620px;
   margin: 0 auto;
+  font-style: italic;
 }
 
 /* ── Main content area ── */
 main {
   max-width: 900px;
-  margin: 40px auto;
-  padding: 0 24px 60px;
+  margin: 20px auto;
+  padding: 0 20px 40px;
 }
 
 /* ── Cards ── */
 .card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 30px 34px;
-  margin-bottom: 28px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: black;
+  border: 1px solid white;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .card h2 {
-  font-size: 1.25rem;
-  color: #1a1a2e;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #e2e8f0;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
 }
 
 .card h3 {
-  font-size: 1rem;
-  color: #2d3748;
-  margin: 18px 0 8px;
+  font-size: 1.1rem;
+  color: white;
+  margin: 15px 0 5px;
+  font-weight: bold;
 }
 
 .card p {
-  font-size: 0.95rem;
-  color: #4a5568;
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  color: white;
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 5px;
+}
+
+/* ── Links ── */
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* ── Tables ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+  color: white;
+}
+
+th {
+  background-color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* ── Code blocks ── */
+code {
+  background-color: black;
+  color: white;
+  padding: 2px 4px;
+  border: 1px solid white;
+  font-family: 'Courier New', monospace;
+}
+
+pre {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  overflow-x: auto;
+}
+
+/* ── Buttons ── */
+button, .btn {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+}
+
+button:hover, .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ── Forms ── */
+input, textarea, select {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 8px;
+  font-family: 'Courier New', monospace;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 1px solid white;
+}
+
+/* ── Images ── */
+img {
+  border: 1px solid white;
+  max-width: 100%;
+}
+
+/* ── Footer ── */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid white;
+  margin-top: 40px;
+}
   margin-bottom: 10px;
 }
 
