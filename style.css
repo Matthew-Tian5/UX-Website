@@ -5,209 +5,185 @@
 }
 
 body {
-  font-family: 'Courier New', monospace;
-  background-color: black;
-  color: white;
-  line-height: 1.2;
-  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.5;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 /* ── Navigation ── */
 nav {
-  background-color: black;
-  padding: 10px 20px;
+  background-color: #f1f3f4;
+  padding: 8px 16px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #dadce0;
+  font-size: 13px;
 }
 
 nav .brand {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
+  color: #202124;
+  font-size: 18px;
+  font-weight: 400;
   margin-right: auto;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 nav a {
-  color: white;
+  color: #202124;
   text-decoration: none;
-  font-size: 0.9rem;
-  padding: 5px 10px;
-  border: 1px solid white;
-  transition: none;
-}
-
-nav a:hover,
-nav a.active {
-  background-color: white;
-  color: black;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 /* ── Hero / Page Header ── */
 .page-header {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   padding: 40px 20px 30px;
   text-align: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #dadce0;
 }
 
 .page-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #202124;
 }
 
 .page-header p {
-  font-size: 1rem;
-  color: white;
-  max-width: 620px;
+  font-size: 14px;
+  color: #5f6368;
+  max-width: 600px;
   margin: 0 auto;
-  font-style: italic;
 }
 
 /* ── Main content area ── */
 main {
-  max-width: 900px;
+  max-width: 800px;
   margin: 20px auto;
   padding: 0 20px 40px;
 }
 
 /* ── Cards ── */
 .card {
-  background: black;
-  border: 1px solid white;
-  padding: 20px;
-  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #dadce0;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
 }
 
 .card h2 {
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
-  text-transform: uppercase;
+  font-size: 18px;
+  color: #202124;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #dadce0;
+  font-weight: 400;
 }
 
 .card h3 {
-  font-size: 1.1rem;
-  color: white;
-  margin: 15px 0 5px;
-  font-weight: bold;
+  font-size: 16px;
+  color: #202124;
+  margin: 12px 0 4px;
+  font-weight: 400;
 }
 
 .card p {
-  font-size: 0.9rem;
-  color: white;
-  margin-bottom: 10px;
+  font-size: 14px;
+  color: #3c4043;
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .card ul {
-  color: white;
+  color: #3c4043;
   padding-left: 20px;
+  margin-bottom: 8px;
 }
 
 .card li {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+  line-height: 1.4;
 }
 
 /* ── Links ── */
 a {
-  color: white;
+  color: #1a73e8;
   text-decoration: underline;
-}
-
-a:hover {
-  color: white;
-  background-color: black;
-}
-
-/* ── Tables ── */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 10px 0;
-}
-
-th, td {
-  border: 1px solid white;
-  padding: 8px;
-  text-align: left;
-  color: white;
-}
-
-th {
-  background-color: black;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 /* ── Code blocks ── */
 code {
-  background-color: black;
-  color: white;
+  background-color: #f1f3f4;
+  color: #202124;
   padding: 2px 4px;
-  border: 1px solid white;
+  border-radius: 3px;
   font-family: 'Courier New', monospace;
+  font-size: 12px;
 }
 
 pre {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border: 1px solid white;
+  background-color: #f1f3f4;
+  color: #202124;
+  padding: 12px;
+  border-radius: 4px;
   overflow-x: auto;
+  border: 1px solid #dadce0;
+  font-size: 12px;
 }
 
 /* ── Buttons ── */
 button, .btn {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  padding: 8px 16px;
+  background-color: #f1f3f4;
+  color: #202124;
+  border: 1px solid #dadce0;
+  padding: 6px 12px;
+  border-radius: 4px;
   cursor: pointer;
-  font-family: 'Courier New', monospace;
-}
-
-button:hover, .btn:hover {
-  background-color: white;
-  color: black;
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
 }
 
 /* ── Forms ── */
 input, textarea, select {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  padding: 8px;
-  font-family: 'Courier New', monospace;
+  background-color: white;
+  color: #202124;
+  border: 1px solid #dadce0;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
 }
 
 input:focus, textarea:focus, select:focus {
-  outline: 1px solid white;
+  outline: 2px solid #1a73e8;
+  border-color: #1a73e8;
 }
 
 /* ── Images ── */
 img {
-  border: 1px solid white;
   max-width: 100%;
+  border-radius: 4px;
 }
 
 /* ── Footer ── */
 footer {
-  background-color: black;
-  color: white;
+  background-color: #f1f3f4;
+  color: #5f6368;
   text-align: center;
-  padding: 20px;
-  border-top: 1px solid white;
-  margin-top: 40px;
+  padding: 16px;
+  border-top: 1px solid #dadce0;
+  margin-top: 32px;
+  font-size: 12px;
 }
   margin-bottom: 10px;
 }
