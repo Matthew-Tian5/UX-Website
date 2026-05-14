@@ -18,3 +18,4 @@ This site presents a UX usability study overview for an AI-focused learning modu
 ## Notes
 
 This page is a simple prototype summary for UX research and is designed to look like a study report rather than a finished product.
+
